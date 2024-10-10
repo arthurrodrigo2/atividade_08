@@ -26,8 +26,8 @@ def cadastrar_usuario():
     usuario['E-mail'] = input("Digite o e-mail: ").strip()
     usuario['Profissão'] = input("Digite a profissão: ").strip()
     usuario['Tipo Sanguíneo'] = input("Digite o tipo sanguíneo: ").strip()
-    usuario['Peso'] = float(input("Digite o peso (em kg): "))
-    usuario['Altura'] = float(input("Digite a altura (em metros): "))
+    usuario['Peso'] = float(input("Digite o peso (em kg): ").replace(',','.'))
+    usuario['Altura'] = float(input("Digite a altura (em metros): ").replace(',','.'))
     
     # dicionário do usuário à lista de usuários
     usuarios.append(usuario)
